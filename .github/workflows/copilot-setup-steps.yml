@@ -1,0 +1,70 @@
+name: "Copilot Setup Steps"
+
+# Zažene se ob vsaki spremembi tega fila in omogoča ročno proženje
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+
+jobs:
+  # Ime JOB-a MORA biti točno `copilot-setup-steps`
+  copilot-setup-steps:
+    runs-on: windows-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repozitorija
+        uses: actions/checkout@v4
+
+      - name: Preveri Git verzijo
+        run: git --version
+
+      - name: Nastavi Node.js LTS (v20+)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Preveri Node.js in npm verzijo
+        run: |
+          node --version
+          npm --version
+
+      - name: Nastavi PowerShell ExecutionPolicy
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+          Write-Host "ExecutionPolicy nastavljena: $(Get-ExecutionPolicy -Scope CurrentUser)"
+
+      - name: Namesti Claude Code CLI globalno
+        shell: powershell
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          Write-Host "Claude Code nameščen."
+
+      - name: Preveri Claude Code namestitev
+        shell: powershell
+        run: |
+          $claudePath = Get-Command claude -ErrorAction SilentlyContinue
+          if ($claudePath) {
+            Write-Host "✅ Claude Code najden na: $($claudePath.Path)"
+            claude --version
+          } else {
+            Write-Host "⚠️ claude ukaz ni v PATH, preverjam npm global..."
+            npm list -g @anthropic-ai/claude-code
+          }
+
+      - name: Povzetek nameščenega okolja
+        shell: powershell
+        run: |
+          Write-Host "=== OAP Okolje – Namestitev zaključena ==="
+          Write-Host "Git:      $(git --version)"
+          Write-Host "Node.js:  $(node --version)"
+          Write-Host "npm:      $(npm --version)"
+          Write-Host "OS:       $([System.Environment]::OSVersion.VersionString)"
+          Write-Host "========================================="
