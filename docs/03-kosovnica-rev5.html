@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kosovnica KOS-01 – revizija 5</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 100%;
+      padding: 20px;
+      background: white;
+    }
+    h1 { font-size: 1.8em; margin: 1em 0 0.5em 0; color: #1a1a1a; page-break-after: avoid; }
+    h2 { font-size: 1.4em; margin: 1.2em 0 0.4em 0; color: #333; page-break-after: avoid; }
+    h3 { font-size: 1.1em; margin: 1em 0 0.3em 0; color: #555; page-break-after: avoid; }
+    h4 { font-size: 1em; margin: 0.8em 0 0.2em 0; color: #666; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      page-break-inside: avoid;
+      font-size: 0.9em;
+    }
+    th {
+      background: #f0f0f0;
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+      font-weight: bold;
+    }
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    tr:nth-child(even) { background: #f9f9f9; }
+    code { 
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+    pre {
+      background: #f5f5f5;
+      padding: 12px;
+      border-radius: 4px;
+      overflow-x: auto;
+      page-break-inside: avoid;
+    }
+    pre code { background: none; padding: 0; }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 12px;
+      margin-left: 0;
+      color: #666;
+    }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page-break { page-break-after: always; }
+  </style>
+</head>
+<body>
+  <h1>Kosovnica – ogrevanje in hlajenje</h1>
+<p><strong>Oznaka dokumenta:</strong> KOS-01<br>
+<strong>Revizija:</strong> 4<br>
+<strong>Datum:</strong> 27. 8. 2026<br>
+<strong>Referenca:</strong> P&amp;ID revizija 23, listi 1–9, in tehnični dokument TD-01, revizija 4<br>
+<strong>Pisava:</strong> Segoe UI; nadomestni pisavi Noto Sans in DejaVu Sans</p>
+<h2>Navodilo za uporabo</h2>
+<ul>
+<li><strong>Proizvajalčeva koda</strong> pomeni model, serijo ali tipsko oznako.</li>
+<li><strong>Naročniška številka</strong> pomeni kataloško številko za naročilo.</li>
+<li>Če naročniška številka ni javno potrjena, je zapisano <strong>ni podana</strong> ali<br>
+<strong>določi ponudnik</strong>.</li>
+<li>Alternativna možnost je zapisana v naslednji vrstici; prvi stolpec ostane<br>
+prazen.</li>
+<li>Ponujena alternativa mora izpolniti vse zahteve iz zadnjega stolpca in<br>
+tehničnega dokumenta TD-01.</li>
+</ul>
+<h2>1. Glavna oprema</h2>
+<table>
+<thead>
+<tr>
+<th>Oznaka elementa</th>
+<th>Element</th>
+<th style="text-align:right">Število</th>
+<th>Proizvajalec</th>
+<th>Proizvajalčeva koda</th>
+<th>Naročniška številka</th>
+<th>Komentar / karakteristike za alternativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TČ-01</td>
+<td>Reverzibilna monoblok toplotna črpalka</td>
+<td style="text-align:right">1</td>
+<td>Samsung</td>
+<td>EHS Mono R290, 16 kW, 3~400 V</td>
+<td><code>AE160CXYBGK/EU</code></td>
+<td>Izbrana trifazna izvedba 380–415 V, 50 Hz; R290, ogrevanje/hlajenje, vgrajena P-HP, PSV 2,9 bar</td>
+</tr>
+<tr>
+<td>RC-HP</td>
+<td>Žični upravljalnik TČ-01</td>
+<td style="text-align:right">1</td>
+<td>Samsung</td>
+<td>MWR-WW10N</td>
+<td><code>MWR-WW10N</code></td>
+<td>Potrditi združljivost in ali je že v kompletu TČ-01</td>
+</tr>
+<tr>
+<td>WIFI-HP</td>
+<td>Komunikacijski modul</td>
+<td style="text-align:right">0/1</td>
+<td>Samsung</td>
+<td>MIM-H04N</td>
+<td><code>MIM-H04N</code></td>
+<td>Opcijsko; samo če funkcija ni vključena</td>
+</tr>
+<tr>
+<td>K-01</td>
+<td>Uplinjevalni kotel na polena z regulatorjem</td>
+<td style="text-align:right">1</td>
+<td>Seltron</td>
+<td>UKP 20 SMART + BXD</td>
+<td>ni podana</td>
+<td>21 kW, 132 L, PS 3 bar, varnostni HX, povratek ≥55 °C</td>
+</tr>
+<tr>
+<td>T-01</td>
+<td>Hranilnik za ogrevanje in hlajenje</td>
+<td style="text-align:right">1</td>
+<td>Cordivari</td>
+<td>VOLANO BS HOT/COLD 1000</td>
+<td><code>3001162150006</code></td>
+<td>1.034 L, PS 7 bar, −10/+90 °C, izolacija za hlajenje; štirje sistemski priključki A = 3″ F</td>
+</tr>
+<tr>
+<td>T-02</td>
+<td>Bojler z dvema tuljavama</td>
+<td style="text-align:right">1</td>
+<td>Cordivari</td>
+<td>BOLLY 2 AP INOX 400</td>
+<td><code>3134052010303</code></td>
+<td>425 L, inox 316L; hranilnik 6 bar/95 °C, HX 12 bar/110 °C; HX 1,3 m² in 2,0 m²; štirje priključki tuljav G 1″ F</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativni bojler z dvema tuljavama</td>
+<td style="text-align:right">1</td>
+<td>Lapesa</td>
+<td>GX400M2</td>
+<td>določi ponudnik</td>
+<td>Dovoljen samo po ponovnem preračunu površin tuljav, moči in tlačnih izgub</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Ekspanzijska, varnostna in sanitarna oprema</h2>
+<table>
+<thead>
+<tr>
+<th>Oznaka elementa</th>
+<th>Element</th>
+<th style="text-align:right">Število</th>
+<th>Proizvajalec</th>
+<th>Proizvajalčeva koda</th>
+<th>Naročniška številka</th>
+<th>Komentar / karakteristike za alternativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ET-01</td>
+<td>Ekspanzijska posoda tehnične vode</td>
+<td style="text-align:right">1</td>
+<td>Zilmet</td>
+<td>Cal-Pro 250</td>
+<td><code>1300025000</code></td>
+<td>250 L, PS 6 bar, p0 nastaviti na 1,5 bar</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa ET-01</td>
+<td style="text-align:right">1</td>
+<td>Reflex</td>
+<td>N 250</td>
+<td><code>8214300</code></td>
+<td>Najmanj 250 L, PS ≥6 bar, temperaturno ustrezna</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa ET-01</td>
+<td style="text-align:right">1</td>
+<td>Flamco</td>
+<td>Contra-Flex 250</td>
+<td><code>26225</code></td>
+<td>Najmanj 250 L, PS ≥6 bar, temperaturno ustrezna</td>
+</tr>
+<tr>
+<td>SV-ET01</td>
+<td>Namenski servisni ventil ekspanzije</td>
+<td style="text-align:right">1</td>
+<td>Reflex</td>
+<td>SU R 1 × Rp 1</td>
+<td><code>7613100</code></td>
+<td>EN 12828, zapiranje samo z orodjem, z izpustom; med obratovanjem odprt</td>
+</tr>
+<tr>
+<td>ET-02</td>
+<td>Pretočna ekspanzijska posoda za pitno vodo</td>
+<td style="text-align:right">1</td>
+<td>Zilmet</td>
+<td>Hydroflex 50</td>
+<td><code>11D0005002</code> – potrditi</td>
+<td>50 L, PS 10 bar, p0 nastaviti na 2,8 bar, Tmax membrane ≥70 °C; ustreza tudi pri tlaku 4,0 bar</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa ET-02</td>
+<td style="text-align:right">1</td>
+<td>Zilmet</td>
+<td>Hydroflex 35</td>
+<td><code>11D0003502</code></td>
+<td>Pretočna izvedba 35 L je dovoljena samo pri nastavljenem in izmerjenem PRV-DHW ≤3,5 bar</td>
+</tr>
+<tr>
+<td>ZDA-ET02</td>
+<td>Pretočna armatura ET-02</td>
+<td style="text-align:right">1</td>
+<td>Zilmet</td>
+<td>ZDA G3/4&quot;</td>
+<td>ni podana</td>
+<td>Obvezna pretočna izvedba; pravilna smer pretoka</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativna pretočna armatura</td>
+<td style="text-align:right">1</td>
+<td>Reflex</td>
+<td>Flowjet</td>
+<td><code>9116799</code></td>
+<td>Samo skupaj z ustrezno posodo Refix DD</td>
+</tr>
+<tr>
+<td>PSV-K</td>
+<td>Varnostni ventil kotla</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>serija 311, 3 bar, G3/4&quot;</td>
+<td><code>311530</code></td>
+<td>Neposredno na K-01, brez zapore, zmogljivost za najmanj 21 kW</td>
+</tr>
+<tr>
+<td>PSV-BUF</td>
+<td>Varnostni ventil hranilnika</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>serija 311, 3 bar, G3/4&quot;</td>
+<td><code>311530</code></td>
+<td>Neposredno na T-01, brez zapore</td>
+</tr>
+<tr>
+<td>PSV-HP</td>
+<td>Varnostni ventil TČ</td>
+<td style="text-align:right">1</td>
+<td>Samsung</td>
+<td>vgrajen 2,9 bar</td>
+<td>del TČ-01</td>
+<td>Ostane funkcionalen pri servisni izolaciji</td>
+</tr>
+<tr>
+<td>PSV-DHW</td>
+<td>Varnostni ventil sanitarne vode</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>serija 311, 6 bar, G3/4&quot;</td>
+<td><code>311560</code></td>
+<td>Pitna voda; brez zapore proti T-02 in ET-02</td>
+</tr>
+<tr>
+<td>TAS-K</td>
+<td>Termični varnostni ventil kotla</td>
+<td style="text-align:right">1</td>
+<td>Watts</td>
+<td>STS.S, kapilara 1,3 m</td>
+<td><code>0232620</code></td>
+<td>Proženje 97 °C, G3/4&quot;, hladna voda ≥2 bar</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa TAS-K z daljšo kapilaro</td>
+<td style="text-align:right">1</td>
+<td>Watts</td>
+<td>STS.S, kapilara 2 m</td>
+<td><code>0232720</code></td>
+<td>Enaka funkcija; uporabiti, če postavitev zahteva daljšo kapilaro</td>
+</tr>
+<tr>
+<td>AAV-HP</td>
+<td>Avtomatski odzračevalnik</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>MINICAL G1/2&quot;</td>
+<td><code>502041</code></td>
+<td>10 bar, 120 °C, visoka točka kroga TČ</td>
+</tr>
+<tr>
+<td>AAV-K</td>
+<td>Avtomatski odzračevalnik</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>MINICAL G1/2&quot;</td>
+<td><code>502041</code></td>
+<td>10 bar, 120 °C, visoka točka kotlovskega kroga</td>
+</tr>
+<tr>
+<td>MAN-01</td>
+<td>Manometer</td>
+<td style="text-align:right">1</td>
+<td>Watts</td>
+<td>MG1-INOX, 0–6 bar, Ø63 mm</td>
+<td><code>PE350614LF</code></td>
+<td>Glicerinski, spodnji priključek G1/4&quot;</td>
+</tr>
+<tr>
+<td>PRV-DHW</td>
+<td>Reduktor tlaka sanitarne vode</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>5330H, G3/4&quot;</td>
+<td><code>533051H</code> – potrditi</td>
+<td>EN 1567, vhod do 16 bar, nastavitev 3,0 bar</td>
+</tr>
+<tr>
+<td>NV-DHW</td>
+<td>Preverljiv nepovratni ventil</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>serija 3045, tip EA, G3/4&quot;</td>
+<td><code>304550</code> – potrditi</td>
+<td>Pitna voda, EN 13959, pred ET-02 in T-02</td>
+</tr>
+<tr>
+<td>TMV-DHW</td>
+<td>Termostatski mešalni ventil</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>serija 521, G3/4&quot;</td>
+<td><code>521303</code></td>
+<td>30–65 °C, z nepovratnima ventiloma in filtri</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa TMV-DHW</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>serija 521</td>
+<td><code>521500</code></td>
+<td>Potrebni ločeni nepovratni ventili in filtri</td>
+</tr>
+<tr>
+<td>FILL-01</td>
+<td>Polnilni sklop z zaščito BA</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>serija 580, R1/2&quot;</td>
+<td><code>580011</code></td>
+<td>EN 1717, filter, BA in PRV; izhod nastaviti na 1,8 bar</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa FILL-01</td>
+<td style="text-align:right">1</td>
+<td>SYR</td>
+<td>6022</td>
+<td>določi ponudnik</td>
+<td>Enaka zaščita BA po EN 1717 in reducirni ventil</td>
+</tr>
+<tr>
+<td>HOSE-01</td>
+<td>Ločljiva polnilna cev</td>
+<td style="text-align:right">1 komplet</td>
+<td>po izbiri</td>
+<td>G1/2&quot;, PN10+</td>
+<td>določi ponudnik</td>
+<td>Po polnitvi mora biti fizično odstranjena; dolžina po izmeri</td>
+</tr>
+<tr>
+<td>AFV-HP-S/R</td>
+<td>Protizmrzovalni ventil dovoda oziroma povratka</td>
+<td style="text-align:right">2</td>
+<td>Giacomini</td>
+<td>R148HP</td>
+<td>določi ponudnik</td>
+<td>Za monoblok, samodejni izpust; uporabo mora dovoliti proizvajalec TČ</td>
+</tr>
+<tr>
+<td>UPS-HP</td>
+<td>Rezervno napajanje črpalke in krmilnika</td>
+<td style="text-align:right">1 komplet</td>
+<td>po elektroprojektu</td>
+<td>določi elektroprojekt</td>
+<td>določi ponudnik</td>
+<td>Moč, zagonski tok in avtonomija po meritvah TČ-01</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Črpalke in hidravlična armatura</h2>
+<table>
+<thead>
+<tr>
+<th>Oznaka elementa</th>
+<th>Element</th>
+<th style="text-align:right">Število</th>
+<th>Proizvajalec</th>
+<th>Proizvajalčeva koda</th>
+<th>Naročniška številka</th>
+<th>Komentar / karakteristike za alternativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P-HP</td>
+<td>Primarna črpalka TČ</td>
+<td style="text-align:right">1</td>
+<td>Samsung</td>
+<td>vgrajena</td>
+<td>del TČ-01</td>
+<td>Zagotoviti 2,75 m³/h in dokazati razpoložljivo zunanjo tlačno višino</td>
+</tr>
+<tr>
+<td>P-K</td>
+<td>Elektronska kotlovska črpalka</td>
+<td style="text-align:right">1</td>
+<td>Grundfos</td>
+<td>MAGNA3 32-40</td>
+<td><code>97924254</code></td>
+<td>DN32; potrjena delovna točka najmanj 1,81 m³/h pri 1,2 m; začetna nastavitev približno 1,3 m</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa P-K z večjo višino</td>
+<td style="text-align:right">1</td>
+<td>Grundfos</td>
+<td>MAGNA3 32-60</td>
+<td><code>97924255</code></td>
+<td>Uporabiti samo, če izračun preseže območje 32-40</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa P-K</td>
+<td style="text-align:right">1</td>
+<td>Wilo</td>
+<td>Stratos MAXO DN32</td>
+<td>določi ponudnik</td>
+<td>Delovna točka in temperaturno območje morata biti dokazani</td>
+</tr>
+<tr>
+<td>P-L</td>
+<td>Elektronska črpalka porabnikov</td>
+<td style="text-align:right">1</td>
+<td>Grundfos</td>
+<td>MAGNA1 25-100 180</td>
+<td><code>99221214</code></td>
+<td>1 × 230 V; projektna točka 2,36 m³/h pri najmanj 7,0 m; konstantni tlak; brezpotencialni alarm v REG-01</td>
+</tr>
+<tr>
+<td>P-BUF-DHW</td>
+<td>Črpalka polnjenja zgornje tuljave iz T-01</td>
+<td style="text-align:right">1</td>
+<td>Grundfos</td>
+<td>MAGNA3 32-40</td>
+<td><code>97924254</code></td>
+<td>DN32; potrjena delovna točka najmanj 1,72 m³/h pri 1,1 m; začetna nastavitev približno 1,2 m</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa P-BUF-DHW</td>
+<td style="text-align:right">1</td>
+<td>Wilo</td>
+<td>Stratos MAXO DN32</td>
+<td>določi ponudnik</td>
+<td>Enaka delovna točka, Tmax ≥110 °C, povratni signal obratovanja</td>
+</tr>
+<tr>
+<td>MV-DHW</td>
+<td>Tripotni preklopni ventil s pogonom</td>
+<td style="text-align:right">1 komplet</td>
+<td>ESBE</td>
+<td>VRG231 DN32 + ARA600</td>
+<td>ventil <code>11620300</code>; pogon določi ponudnik</td>
+<td>Kvs 16, 230 V, 2-točkovno, končna kontakta</td>
+</tr>
+<tr>
+<td>MV-DHW-S</td>
+<td>Tripotni preklopni ventil dovoda zgornjega HX</td>
+<td style="text-align:right">1 komplet</td>
+<td>ESBE</td>
+<td>VRG231 DN32 + ARA600</td>
+<td>ventil <code>11620300</code>; pogon določi ponudnik</td>
+<td>Izbira K-01/T-01, Kvs 16, 230 V, končna kontakta; sinhroniziran z MV-DHW-R</td>
+</tr>
+<tr>
+<td>MV-DHW-R</td>
+<td>Tripotni preklopni ventil povratka zgornjega HX</td>
+<td style="text-align:right">1 komplet</td>
+<td>ESBE</td>
+<td>VRG231 DN32 + ARA600</td>
+<td>ventil <code>11620300</code>; pogon določi ponudnik</td>
+<td>Izbira K-01/T-01, Kvs 16, 230 V, končna kontakta; sinhroniziran z MV-DHW-S</td>
+</tr>
+<tr>
+<td>MV-SU</td>
+<td>Tripotni preklopni ventil s pogonom</td>
+<td style="text-align:right">1 komplet</td>
+<td>ESBE</td>
+<td>VRG231 DN32 + ARA600</td>
+<td>ventil <code>11620300</code>; pogon določi ponudnik</td>
+<td>Kvs 16, hlajena voda, 230 V, 2-točkovno, končna kontakta</td>
+</tr>
+<tr>
+<td>MV-SL</td>
+<td>Tripotni preklopni ventil s pogonom</td>
+<td style="text-align:right">1 komplet</td>
+<td>ESBE</td>
+<td>VRG231 DN32 + ARA600</td>
+<td>ventil <code>11620300</code>; pogon določi ponudnik</td>
+<td>Enako kot MV-SU</td>
+</tr>
+<tr>
+<td>MV-LU</td>
+<td>Tripotni preklopni ventil s pogonom</td>
+<td style="text-align:right">1 komplet</td>
+<td>ESBE</td>
+<td>VRG231 DN32 + ARA600</td>
+<td>ventil <code>11620300</code>; pogon določi ponudnik</td>
+<td>Enako kot MV-SU</td>
+</tr>
+<tr>
+<td>MV-LL</td>
+<td>Tripotni preklopni ventil s pogonom</td>
+<td style="text-align:right">1 komplet</td>
+<td>ESBE</td>
+<td>VRG231 DN32 + ARA600</td>
+<td>ventil <code>11620300</code>; pogon določi ponudnik</td>
+<td>Enako kot MV-SU</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa tripotnim preklopnim ventilom</td>
+<td style="text-align:right">7 kompletov</td>
+<td>Belimo</td>
+<td>DN32, tripotni</td>
+<td>določi ponudnik</td>
+<td>Kvs ≥16, enaka preklopna funkcija, 230 V, končna kontakta</td>
+</tr>
+<tr>
+<td>MV-K</td>
+<td>Tripotni mešalni ventil s pogonom</td>
+<td style="text-align:right">1 komplet</td>
+<td>ESBE</td>
+<td>VRG131 DN32 + ARA600</td>
+<td>ventil <code>11601200</code>; pogon določi ponudnik</td>
+<td>Kvs 16, 230 V, 3-točkovno, združljivost z BXD</td>
+</tr>
+<tr>
+<td>MV-SEC</td>
+<td>Tripotni modulacijski mešalni ventil sekundarja</td>
+<td style="text-align:right">1 komplet</td>
+<td>po izbiri</td>
+<td>DN25, Kvs 6,3</td>
+<td>določi ponudnik</td>
+<td>0–10 V, povratna informacija položaja; varen položaj: dovod iz T-01 zaprt, bypass odprt; medij 5–70 °C ali širše</td>
+</tr>
+<tr>
+<td>MZV-K</td>
+<td>Dvopotni motorni ventil, fail-open</td>
+<td style="text-align:right">1 komplet</td>
+<td>Belimo</td>
+<td>R2032-S3 + NRF230A-S2</td>
+<td>določi ponudnik</td>
+<td>DN32, Kvs 32, 230 V, pomožna kontakta; brez napajanja odprt proti T-01</td>
+</tr>
+<tr>
+<td>MZV-DHW-K</td>
+<td>Dvopotni motorni ventil, fail-closed</td>
+<td style="text-align:right">1 komplet</td>
+<td>Belimo</td>
+<td>R2032-S3 + NRF230A-S2</td>
+<td>določi ponudnik</td>
+<td>DN32, Kvs 32, 230 V, pomožna kontakta; brez napajanja zaprt</td>
+</tr>
+<tr>
+<td>KV-DN32</td>
+<td>Polnopretočni servisni krogelni ventil</td>
+<td style="text-align:right">14</td>
+<td>Giacomini</td>
+<td>R910, 1 1/4&quot;</td>
+<td>določi ponudnik</td>
+<td>Kvs približno 128, PN10+, −10/+110 °C; količina po izmeri</td>
+</tr>
+<tr>
+<td>NV-K-PRI</td>
+<td>Vzmetni nepovratni ventil primarnega kotlovskega dovoda</td>
+<td style="text-align:right">1</td>
+<td>Oventrop</td>
+<td>DN32, PN25</td>
+<td><code>1072310</code></td>
+<td>Kvs 28,2; smer pretoka K-01 → T-01</td>
+</tr>
+<tr>
+<td>NV-DHW-K</td>
+<td>Vzmetni nepovratni ventil kotlovske veje zgornjega HX</td>
+<td style="text-align:right">1</td>
+<td>Oventrop</td>
+<td>DN32, PN25</td>
+<td><code>1072310</code></td>
+<td>Kvs 28,2; smer pretoka K-01 → zgornji HX T-02</td>
+</tr>
+<tr>
+<td>NV-BUF</td>
+<td>Vzmetni nepovratni ventil veje T-01 → zgornji HX</td>
+<td style="text-align:right">1</td>
+<td>Oventrop</td>
+<td>DN32, PN25</td>
+<td><code>1072310</code></td>
+<td>Kvs 28,2, preprečuje termosifonski in povratni tok</td>
+</tr>
+<tr>
+<td>FIL-HP</td>
+<td>Magnetni izločevalnik nečistoč</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>DIRTMAG DN32</td>
+<td><code>546317</code></td>
+<td>10 bar, 110 °C, magnetni; zahtevati Δp pri 2,75 m³/h</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa FIL-HP</td>
+<td style="text-align:right">1</td>
+<td>Flamco</td>
+<td>XStream Clean DN32</td>
+<td>določi ponudnik</td>
+<td>Magnetni, 10 bar, ≥110 °C, znan Δp</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa FIL-HP</td>
+<td style="text-align:right">1</td>
+<td>Spirotech</td>
+<td>SpiroTrap MB3 DN32</td>
+<td>določi ponudnik</td>
+<td>Magnetni, 10 bar, ≥110 °C, znan Δp</td>
+</tr>
+<tr>
+<td>SEP-AIR</td>
+<td>Mikroizločevalnik zraka</td>
+<td style="text-align:right">1</td>
+<td>Caleffi</td>
+<td>DISCAL DN32</td>
+<td><code>551317</code></td>
+<td>10 bar, ≥110 °C, pretok ≥2,75 m³/h, znan Δp</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa SEP-AIR</td>
+<td style="text-align:right">1</td>
+<td>Spirotech</td>
+<td>SpiroVent DN32</td>
+<td><code>83508306</code></td>
+<td>Enaka funkcija, 10 bar, ≥110 °C</td>
+</tr>
+<tr>
+<td>DRAIN</td>
+<td>Polnilno-praznilna pipa</td>
+<td style="text-align:right">4</td>
+<td>Caleffi</td>
+<td>G1/2&quot;, s kapo</td>
+<td><code>508040</code></td>
+<td>PN10+, najnižje servisne točke</td>
+</tr>
+<tr>
+<td>FIL-SEC</td>
+<td>Magnetni izločevalnik nečistoč sekundarja</td>
+<td style="text-align:right">1</td>
+<td>po izbiri</td>
+<td>DN32</td>
+<td>določi ponudnik</td>
+<td>Na skupnem povratku; 6 bar ali več, 75 °C ali več, parozaporna izolacija, znan Δp pri 2,36 m³/h</td>
+</tr>
+<tr>
+<td>SEP-AIR-SEC</td>
+<td>Centralni mikroizločevalnik zraka sekundarja</td>
+<td style="text-align:right">1</td>
+<td>po izbiri</td>
+<td>DN32</td>
+<td>določi ponudnik</td>
+<td>Ob RAZ-1; 6 bar ali več, 75 °C ali več, parozaporna izolacija</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Regulacija in tipala</h2>
+<table>
+<thead>
+<tr>
+<th>Oznaka elementa</th>
+<th>Element</th>
+<th style="text-align:right">Število</th>
+<th>Proizvajalec</th>
+<th>Proizvajalčeva koda</th>
+<th>Naročniška številka</th>
+<th>Komentar / karakteristike za alternativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DPT-201</td>
+<td>Kontaktno tipalo kondenzacije na RAZ-1</td>
+<td style="text-align:right">1</td>
+<td>Siemens</td>
+<td>QXA2601</td>
+<td><code>S55770-T325</code></td>
+<td>24 V AC/DC, SPDT, IP54, neposredno tipanje na cevi</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa DPT-201</td>
+<td style="text-align:right">1</td>
+<td>Siemens</td>
+<td>QXA2602</td>
+<td><code>S55770-T326</code></td>
+<td>Enaka osnovna funkcija; preveriti izhodni signal</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativa DPT-201</td>
+<td style="text-align:right">1</td>
+<td>E+E Elektronik</td>
+<td>EE046-T11</td>
+<td><code>EE046-T11</code></td>
+<td>Neposredno tipanje kondenzacije, združljiv izhod</td>
+</tr>
+<tr>
+<td>REG-01</td>
+<td>Krmilna omara sistema</td>
+<td style="text-align:right">1 komplet</td>
+<td>po izbiri integratorja</td>
+<td>modularni industrijski PLC/DDC</td>
+<td>določi ponudnik</td>
+<td>WAGO PFC200, Schneider M241, Siemens Climatix ali S7-1200; I/O razširljiv po spodnjih signalih; lokalni splet, e-pošta/potisna obvestila</td>
+</tr>
+<tr>
+<td>HMI-01</td>
+<td>Lokalni barvni upravljalni panel</td>
+<td style="text-align:right">1</td>
+<td>po izbranem regulatorju</td>
+<td>industrijski HMI</td>
+<td>določi ponudnik</td>
+<td>AUTO/OGREVANJE/HLAJENJE/IZKLOP; lokalni servis brez gesla, samodejni povratek AUTO po 30 min</td>
+</tr>
+<tr>
+<td>RIO-V1…V6</td>
+<td>Oddaljena Modbus I/O postaja vertikale</td>
+<td style="text-align:right">6</td>
+<td>po izbranem regulatorju</td>
+<td>DI/DO/AI Modbus RTU</td>
+<td>določi ponudnik</td>
+<td>Po ena postaja na vertikalo; ob izgubi komunikacije varno zapre prizadeto vertikalo</td>
+</tr>
+<tr>
+<td>T-SYS</td>
+<td>Temperaturna tipala</td>
+<td style="text-align:right">po I/O seznamu</td>
+<td>po izbranem regulatorju</td>
+<td>Pt1000 ali ustrezni NTC</td>
+<td>določi ponudnik</td>
+<td>Lastni tipali T-01 zgoraj/spodaj, sekundarni dovod/povratek in zunanja temperatura; skupna tipala so varnostno kritična</td>
+</tr>
+<tr>
+<td>TRH-V1…V5</td>
+<td>Tipalo temperature in relativne vlage</td>
+<td style="text-align:right">5</td>
+<td>po izbiri integratorja</td>
+<td>2 × 0–10 V</td>
+<td>določi ponudnik</td>
+<td>Lokacije V1-2, V2-1, V3-3, V4-1 in V5-3N; izračun rosišča</td>
+</tr>
+<tr>
+<td>FS-FC</td>
+<td>Visokonivojsko plovno stikalo kondenzata, NC</td>
+<td style="text-align:right">16</td>
+<td>po izbiri</td>
+<td>brezpotencialni kontakt</td>
+<td>določi ponudnik</td>
+<td>Po eno na vsakem hlajenem terminalu; alarm zapre terminal in zahteva ročni reset</td>
+</tr>
+<tr>
+<td>TM-V1…V6</td>
+<td>Mehanski termomanometer</td>
+<td style="text-align:right">12</td>
+<td>po izbiri</td>
+<td>0–6 bar, 0–80 °C ali širše</td>
+<td>določi ponudnik</td>
+<td>Dva na vertikalo, dovod in povratek; samo lokalni prikaz, brez signala REG-01</td>
+</tr>
+<tr>
+<td>AAV-V1…V6</td>
+<td>Avtomatski odzračevalnik vertikale</td>
+<td style="text-align:right">6 kompletov</td>
+<td>po izbiri</td>
+<td>z zapornim servisnim ventilom</td>
+<td>določi ponudnik</td>
+<td>Na vrhu vsake vertikale; hladni deli parozaporno izolirani</td>
+</tr>
+<tr>
+<td>REL-PICV</td>
+<td>Prioritetni relejni sklop pogona PICV</td>
+<td style="text-align:right">18</td>
+<td>po izbiri integratorja</td>
+<td>230 V AC</td>
+<td>določi ponudnik</td>
+<td>Medsebojno blokirana stanja FORCE CLOSED &gt; FORCE OPEN &gt; AUTO iz regulatorja CW</td>
+</tr>
+<tr>
+<td>UPS-REG</td>
+<td>Rezervno napajanje avtomatike</td>
+<td style="text-align:right">1 komplet</td>
+<td>obstoječi UPS / po elektroprojektu</td>
+<td>določi elektroprojekt</td>
+<td>določi ponudnik</td>
+<td>REG-01, HMI, RIO in omrežje; signal izpada v REG-01</td>
+</tr>
+<tr>
+<td>ES-MV</td>
+<td>Končni kontakti motornih ventilov</td>
+<td style="text-align:right">16–18 kontaktov</td>
+<td>proizvajalec pogonov</td>
+<td>pomožni stikalni moduli</td>
+<td>določi ponudnik</td>
+<td>Suhi kontakti, tudi usklajen položaj MV-DHW-S/R pred zagonom P-BUF-DHW ali P-K</td>
+</tr>
+<tr>
+<td>ALM-01</td>
+<td>Skupni optični/zvočni alarm</td>
+<td style="text-align:right">1 komplet</td>
+<td>po izbiri integratorja</td>
+<td>del REG-01</td>
+<td>določi ponudnik</td>
+<td>Alarm ventilov, rosišča, črpalk in previsoke temperature; breznapetostni kontakt</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Primarni cevovod, izolacija in pritrditev</h2>
+<table>
+<thead>
+<tr>
+<th>Oznaka elementa</th>
+<th>Element</th>
+<th style="text-align:right">Število</th>
+<th>Proizvajalec</th>
+<th>Proizvajalčeva koda</th>
+<th>Naročniška številka</th>
+<th>Komentar / karakteristike za alternativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C-01</td>
+<td>INOX cev AISI 316L, 35 × 1,5 mm</td>
+<td style="text-align:right">11 × 6 m</td>
+<td>Conex Bänninger</td>
+<td>&gt;B&lt; Press Inox 316L</td>
+<td>določi ponudnik</td>
+<td>DN32; 55 m neto in nabavno 66 m z izvedbeno rezervo; −35/+110 °C, najmanj 16 bar</td>
+</tr>
+<tr>
+<td>F-01</td>
+<td>Ravna press spojka 35 mm</td>
+<td style="text-align:right">12</td>
+<td>Conex Bänninger</td>
+<td>PS5270, 35 mm</td>
+<td>določi ponudnik</td>
+<td>Isti certificirani press sistem kot C-01</td>
+</tr>
+<tr>
+<td>F-02</td>
+<td>Press koleno 90°, 35 mm</td>
+<td style="text-align:right">32</td>
+<td>Conex Bänninger</td>
+<td>PS5002, 35 mm</td>
+<td>določi ponudnik</td>
+<td>Projektna količina z rezervo; potrditi z izmero</td>
+</tr>
+<tr>
+<td>F-03</td>
+<td>Enostransko press koleno 90°, 35 mm</td>
+<td style="text-align:right">4</td>
+<td>Conex Bänninger</td>
+<td>PS5001, 35 mm</td>
+<td>določi ponudnik</td>
+<td>Konfiguracijo koncev potrditi pred naročilom</td>
+</tr>
+<tr>
+<td>F-04</td>
+<td>Press koleno 45°, 35 mm</td>
+<td style="text-align:right">8</td>
+<td>Conex Bänninger</td>
+<td>PS5040/PS5041, 35 mm</td>
+<td>določi ponudnik</td>
+<td>Izbrati pravilno moško/žensko izvedbo</td>
+</tr>
+<tr>
+<td>F-05</td>
+<td>Enakostranski T-kos 35 mm</td>
+<td style="text-align:right">6</td>
+<td>Conex Bänninger</td>
+<td>PS5130, 35 mm</td>
+<td>določi ponudnik</td>
+<td>Isti certificirani sistem</td>
+</tr>
+<tr>
+<td>F-06</td>
+<td>Moški navojni prehod 35 × R1 1/4&quot;</td>
+<td style="text-align:right">8</td>
+<td>Conex Bänninger</td>
+<td>PS4243G</td>
+<td>določi ponudnik</td>
+<td>Količino uskladiti z dejanskimi ventili</td>
+</tr>
+<tr>
+<td>F-07</td>
+<td>Ženski navojni prehod 35 × Rp1 1/4&quot;</td>
+<td style="text-align:right">8</td>
+<td>Conex Bänninger</td>
+<td>PS4270G</td>
+<td>določi ponudnik</td>
+<td>Alternativna izvedba F-06 glede na priključke</td>
+</tr>
+<tr>
+<td>F-08</td>
+<td>Razstavljiva prehodna garnitura 35 mm × G 1″ M</td>
+<td style="text-align:right">4</td>
+<td>po izbranem press sistemu</td>
+<td>press/navojna garnitura</td>
+<td>določi ponudnik</td>
+<td><strong>Kataloško potrjeno:</strong> priključki F/G/I/L obeh tuljav T-02 so G 1″ F; tesnjenje in razstavljiv spoj po navodilu proizvajalca</td>
+</tr>
+<tr>
+<td>F-09</td>
+<td>Reducirna in razstavljiva prehodna garnitura 35 mm × 3″ M</td>
+<td style="text-align:right">4</td>
+<td>po izbiri projektanta</td>
+<td>korozijsko združljiva garnitura</td>
+<td>določi ponudnik</td>
+<td><strong>Kataloško potrjeno:</strong> štirje sistemski priključki A hranilnika T-01 so 3″ F; vključiti redukcijo, razstavljiv spoj in galvansko združljiv prehod ogljikovo/nerjavno jeklo</td>
+</tr>
+<tr>
+<td>F-10</td>
+<td>Navojni prehod na TČ-01</td>
+<td style="text-align:right">2</td>
+<td>Conex Bänninger</td>
+<td>po dejanskem navoju</td>
+<td>določi ponudnik</td>
+<td>Ne naročiti pred potrditvijo priključkov TČ-01</td>
+</tr>
+<tr>
+<td>I-01</td>
+<td>Izolacija vročih cevi 35/25 mm</td>
+<td style="text-align:right">42 m</td>
+<td>K-FLEX</td>
+<td>ST 35 × 25 mm</td>
+<td>določi ponudnik</td>
+<td>Količina vključuje kotlovske in TSV veje z rezervo; Tmax ≥105 °C, vsi spoji zlepljeni</td>
+</tr>
+<tr>
+<td>I-02</td>
+<td>Parozaporna izolacija cevi 35/32 mm</td>
+<td style="text-align:right">24 m</td>
+<td>K-FLEX</td>
+<td>ST 35 × 32 mm</td>
+<td>določi ponudnik</td>
+<td>Zaprtocelična in neprekinjeno parozaporna</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativni izolacijski sistem</td>
+<td style="text-align:right">24 m</td>
+<td>Armacell</td>
+<td>AF/ArmaFlex ustrezne dimenzije</td>
+<td>določi ponudnik</td>
+<td>Enaka ali manjša difuzijska prepustnost in ustrezna požarna klasifikacija</td>
+</tr>
+<tr>
+<td>I-03</td>
+<td>Izolacijske plošče za armaturo</td>
+<td style="text-align:right">približno 6 m²</td>
+<td>K-FLEX</td>
+<td>ST, 25/32 mm</td>
+<td>določi ponudnik</td>
+<td>Ventili in fitingi morajo ostati parozaporno zaprti</td>
+</tr>
+<tr>
+<td>I-04</td>
+<td>Lepilo, trak in tesnilna masa</td>
+<td style="text-align:right">1 komplet</td>
+<td>K-FLEX</td>
+<td>sistemski pribor</td>
+<td>določi ponudnik</td>
+<td>Združljivo z izbrano izolacijo</td>
+</tr>
+<tr>
+<td>I-05</td>
+<td>Zunanja UV in mehanska zaščita</td>
+<td style="text-align:right">po izmeri</td>
+<td>K-FLEX</td>
+<td>AL CLAD</td>
+<td>določi ponudnik</td>
+<td>Celotna zunanja izpostavljena dolžina</td>
+</tr>
+<tr>
+<td>N-01</td>
+<td>Izolacijski cevni nosilec</td>
+<td style="text-align:right">24</td>
+<td>K-FLEX</td>
+<td>ST cevni nosilec</td>
+<td>določi ponudnik</td>
+<td>Brez stiskanja izolacije in toplotnega mostu</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativni izolacijski nosilec</td>
+<td style="text-align:right">24</td>
+<td>Armacell</td>
+<td>ArmaFix</td>
+<td>določi ponudnik</td>
+<td>Enaka nosilnost in parozaporna funkcija</td>
+</tr>
+<tr>
+<td>N-02</td>
+<td>Objemka z gumo za cev 35 mm</td>
+<td style="text-align:right">30</td>
+<td>po izbiri</td>
+<td>inox oziroma korozijsko ustrezna</td>
+<td>določi ponudnik</td>
+<td>Nosilnost in razmak po izračunu</td>
+</tr>
+<tr>
+<td>N-03</td>
+<td>Profili, konzole, palice in sidra</td>
+<td style="text-align:right">1 komplet</td>
+<td>Fischer</td>
+<td>sistem po podlagi</td>
+<td>določi ponudnik</td>
+<td>Izbor po podlagi, obremenitvi in protikorozijskem razredu</td>
+</tr>
+<tr>
+<td></td>
+<td>Alternativni pritrdilni sistem</td>
+<td style="text-align:right">1 komplet</td>
+<td>Hilti ali Würth</td>
+<td>po statični kontroli</td>
+<td>določi ponudnik</td>
+<td>Enaka ali večja nosilnost</td>
+</tr>
+</tbody>
+</table>
+<h3>5.1 Primarnih cevi – dolžine za izračune</h3>
+<p>Naslednje dolžine so bile uporabljene za hidravličke izračune v TD-01 sekcija 6.1 in so sledljive skozi sistem kot merila za dimenzioniranje. Vsi odseki so INOX 35 × 1,5 mm:</p>
+<table>
+<thead>
+<tr>
+<th>Odsek</th>
+<th style="text-align:right">Dolžina</th>
+<th>Komentar</th>
+<th>Sklicevanje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K-01 (kotel) → T-01 (gornja tuljava)</td>
+<td style="text-align:right">8 m (2 × 8 m)</td>
+<td>Prosta trasa s polnjenjem/praznjenjekot</td>
+<td>TD-01 sekcija 6.1</td>
+</tr>
+<tr>
+<td>K-01 → T-01 (spodnja tuljava)</td>
+<td style="text-align:right">8 m (2 × 8 m)</td>
+<td>Povratek iz spodnje tuljave</td>
+<td>TD-01 sekcija 6.1</td>
+</tr>
+<tr>
+<td>K-01 → TČ-01 (vhod)</td>
+<td style="text-align:right">skupaj 19 m</td>
+<td>Primarni dovod</td>
+<td>TD-01 sekcija 6.1</td>
+</tr>
+<tr>
+<td>TČ-01 (izhod) → povratek</td>
+<td style="text-align:right">skupaj 19 m</td>
+<td>Primarni povratek</td>
+<td>TD-01 sekcija 6.1</td>
+</tr>
+<tr>
+<td>TČ-01 → T-01/T-02 (temperaturni senzor)</td>
+<td style="text-align:right">2 × 7 m</td>
+<td>Merilni priključki za T-01 in T-02</td>
+<td>TD-01 sekcija 6.1</td>
+</tr>
+<tr>
+<td><strong>Skupaj primarne cevi</strong></td>
+<td style="text-align:right"><strong>55 m neto / 66 m nabavno</strong></td>
+<td>vključuje 15 % rezervo za odmike in Reserve</td>
+<td>TD-01 sekcija 6.1</td>
+</tr>
+</tbody>
+</table>
+<h2>6. Sekundarna distribucija in porabniki</h2>
+<h3>6.1 Sekundarnih cevi – dolžine za izračune</h3>
+<p>Dimenzije in dolžine sekundarnega sistema PEX-AL-PEX (referenčno Uponor MLC press) so naslednje glede na TD-01 sekcija 6.2. Hidravlični izračun vključuje dodatnih 30 % ekvivalentne dolžine za fitinge, lokalne upore in armaturo:</p>
+<table>
+<thead>
+<tr>
+<th>Odsek</th>
+<th>Dimenzija</th>
+<th style="text-align:right">Dolžina</th>
+<th style="text-align:right">Pretok pri projektu</th>
+<th>Komentar</th>
+<th>Sklicevanje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P-L–razcep (od črpalke do razdelnika)</td>
+<td>40 × 4 mm</td>
+<td style="text-align:right">2 m</td>
+<td style="text-align:right">2,355 m³/h</td>
+<td>Skupni odsek pred razcepitvijo</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Desna trasa – I. stopnja (V2–V3)</td>
+<td>32 × 3 mm</td>
+<td style="text-align:right">5 m</td>
+<td style="text-align:right">1,785 m³/h</td>
+<td>Spust do V2 in nadalj V3</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Desna trasa – II. stopnja (V3–V4)</td>
+<td>32 × 3 mm</td>
+<td style="text-align:right">5 m</td>
+<td style="text-align:right">1,193 m³/h</td>
+<td>Nadalj od V3 do V4</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Desna trasa – III. stopnja (V4 povratek)</td>
+<td>26 × 3 mm</td>
+<td style="text-align:right">6 m</td>
+<td style="text-align:right">592 m³/h</td>
+<td>Povratek iz V4 proti skupnemu vratu</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Leva trasa – I. stopnja (V1 dovod)</td>
+<td>26 × 3 mm</td>
+<td style="text-align:right">3 m</td>
+<td style="text-align:right">570 m³/h</td>
+<td>Prvega veja levo (V1)</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Leva trasa – II. stopnja (V1–V6)</td>
+<td>26 × 3 mm</td>
+<td style="text-align:right">7 m</td>
+<td style="text-align:right">570 m³/h</td>
+<td>Povezava V1 in V6</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Leva trasa – III. stopnja (V6–V5)</td>
+<td>20 × 2,25 mm</td>
+<td style="text-align:right">3 m</td>
+<td style="text-align:right">Glede na V5</td>
+<td>Spust do V5</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Vertikala V1 (22 m skupaj)</td>
+<td>20 × 2,25 mm</td>
+<td style="text-align:right">—</td>
+<td style="text-align:right">~285 m³/h</td>
+<td>2 terminala (REGULAR 4000) na etaži</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Vertikala V2 (22 m skupaj)</td>
+<td>26 × 3 mm</td>
+<td style="text-align:right">—</td>
+<td style="text-align:right">~595 m³/h</td>
+<td>3 terminali (2× REGULAR 4000 + 1× REGULAR 2000)</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Vertikala V3 (22 m skupaj)</td>
+<td>26 × 3 mm</td>
+<td style="text-align:right">—</td>
+<td style="text-align:right">~595 m³/h</td>
+<td>3 terminali (1× REGULAR 4000 + 2× REGULAR 2000)</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Vertikala V4 (22 m skupaj)</td>
+<td>26 × 3 mm</td>
+<td style="text-align:right">—</td>
+<td style="text-align:right">~595 m³/h</td>
+<td>3 terminali (1× REGULAR 4000 + 2× REGULAR 2000)</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Vertikala V5 (22 m skupaj)</td>
+<td>20 × 2,25 mm</td>
+<td style="text-align:right">—</td>
+<td style="text-align:right">~285 m³/h</td>
+<td>2 terminala (REGULAR 2000 + LOW 4000)</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Vertikala V6 (22 m skupaj)</td>
+<td>16 × 2 mm</td>
+<td style="text-align:right">—</td>
+<td style="text-align:right">~140 m³/h</td>
+<td>2 terminala (REGULAR 2000) – samo ogrevanje</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td>Priključek terminala (vsakega)</td>
+<td>16 × 2 mm</td>
+<td style="text-align:right">~0,5 m (dovod + povratek)</td>
+<td style="text-align:right">Glede na terminal</td>
+<td>18 terminalov × 2 priključka = 36 × 0,5 m</td>
+<td>TD-01 6.2</td>
+</tr>
+<tr>
+<td><strong>Skupaj sekundarne cevi</strong></td>
+<td><strong>PEX-AL-PEX</strong></td>
+<td style="text-align:right"><strong>približno 204 m</strong></td>
+<td style="text-align:right">—</td>
+<td>vključuje 15 % rezerve za Reserve in fitinge</td>
+<td>TD-01 6.2</td>
+</tr>
+</tbody>
+</table>
+<p>Razrez po posameznih premeri se pred naročilom dopolni z izometrično izmero in dejansko trasirno potrdijo projekta.</p>
+<h3>6.2 Komponente sekundarne distribucije</h3>
+<table>
+<thead>
+<tr>
+<th>Oznaka elementa</th>
+<th>Element</th>
+<th style="text-align:right">Število</th>
+<th>Proizvajalec</th>
+<th>Proizvajalčeva koda</th>
+<th>Naročniška številka</th>
+<th>Komentar / karakteristike za alternativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAZ-1</td>
+<td>Dovodni/povratni razdelilnik sekundarja</td>
+<td style="text-align:right">1 komplet</td>
+<td>po izbiri</td>
+<td>najmanj DN32, šest vej</td>
+<td>določi ponudnik</td>
+<td>Projektni pretok 2,355 m³/h; centralno praznjenje; parozaporna izolacija</td>
+</tr>
+<tr>
+<td>FC-R2000-CW</td>
+<td>Ventilatorski konvektor Ventana REGULAR 2000 CW</td>
+<td style="text-align:right">7</td>
+<td>Cordivari</td>
+<td>Ventana REGULAR 2000 CW</td>
+<td><code>3584776100034</code></td>
+<td>726 × 602 × 120 mm, RAL 9016; 5–75 °C, 1–6 bar, G1/2″ F; V3-2, V5-1, V5-2, V5-I, V5-S, V6-1, V6-2</td>
+</tr>
+<tr>
+<td>FC-R4000-CW</td>
+<td>Ventilatorski konvektor Ventana REGULAR 4000 CW</td>
+<td style="text-align:right">9</td>
+<td>Cordivari</td>
+<td>Ventana REGULAR 4000 CW</td>
+<td><code>3584776100035</code></td>
+<td>918 × 602 × 120 mm, RAL 9016; V1-1/2, V2-1/2/3, V3-1, V4-1/2/3</td>
+</tr>
+<tr>
+<td>FC-L4000-CW</td>
+<td>Ventilatorski konvektor Ventana LOW 4000 CW</td>
+<td style="text-align:right">2</td>
+<td>Cordivari</td>
+<td>Ventana LOW 4000 CW</td>
+<td><code>3584776100039</code></td>
+<td>918 × 432 × 120 mm, RAL 9016; V3-3 in V5-3N</td>
+</tr>
+<tr>
+<td>PICV-LF</td>
+<td>Tlačno neodvisni regulacijski ventil, nizki pretok</td>
+<td style="text-align:right">14</td>
+<td>po izbiri</td>
+<td>DN15, 20–200 l/h</td>
+<td>določi ponudnik</td>
+<td>Merilna priključka, najmanj 6 bar/75 °C; referenčno Danfoss AB-QM 4.0 LF ali Caleffi FLOWMATIC H20</td>
+</tr>
+<tr>
+<td>PICV-HF</td>
+<td>Tlačno neodvisni regulacijski ventil</td>
+<td style="text-align:right">4</td>
+<td>po izbiri</td>
+<td>DN15, 80–400 l/h</td>
+<td>določi ponudnik</td>
+<td>V2-1, V2-2, V4-1, V4-2; merilna priključka; dopustni minimalni Δp do 25 kPa</td>
+</tr>
+<tr>
+<td>ACT-PICV</td>
+<td>Elektrotermični pogon PICV</td>
+<td style="text-align:right">18</td>
+<td>po izbranem PICV</td>
+<td>230 V AC, NC</td>
+<td>določi ponudnik</td>
+<td>Brez napajanja zaprt; združljiv z ventilom in prioritetnim relejnim sklopom</td>
+</tr>
+<tr>
+<td>KV-FC-S</td>
+<td>Servisna zapora terminala</td>
+<td style="text-align:right">18</td>
+<td>po izbiri</td>
+<td>G1/2″ oziroma sistemska</td>
+<td>določi ponudnik</td>
+<td>Na dovodu vsakega terminala; dostopna; pri hlajenih terminalih parozaporno izolirana</td>
+</tr>
+<tr>
+<td>FLEX-FC</td>
+<td>Razstavljivi priključni komplet terminala</td>
+<td style="text-align:right">18 kompletov</td>
+<td>po izbiri</td>
+<td>16 × 2 mm / G1/2″</td>
+<td>določi ponudnik</td>
+<td>Dovod in povratek, razstavljiv servisni spoj, izolacija po režimu</td>
+</tr>
+<tr>
+<td>C-SEC-40</td>
+<td>Večslojna cev PEX-AL-PEX 40 × 4 mm</td>
+<td style="text-align:right">po izometrični izmeri</td>
+<td>dobaviteljsko nevtralno</td>
+<td>referenčno Uponor MLC</td>
+<td>določi ponudnik</td>
+<td>Skupni odsek P-L–razcep; press-fit</td>
+</tr>
+<tr>
+<td>C-SEC-32</td>
+<td>Večslojna cev PEX-AL-PEX 32 × 3 mm</td>
+<td style="text-align:right">po izometrični izmeri</td>
+<td>dobaviteljsko nevtralno</td>
+<td>referenčno Uponor MLC</td>
+<td>določi ponudnik</td>
+<td>Desna prva dva odseka</td>
+</tr>
+<tr>
+<td>C-SEC-26</td>
+<td>Večslojna cev PEX-AL-PEX 26 × 3 mm</td>
+<td style="text-align:right">po izometrični izmeri</td>
+<td>dobaviteljsko nevtralno</td>
+<td>referenčno Uponor MLC</td>
+<td>določi ponudnik</td>
+<td>Desni zadnji in levi prvi dve odseka; vertikale V2/V3/V4</td>
+</tr>
+<tr>
+<td>C-SEC-20</td>
+<td>Večslojna cev PEX-AL-PEX 20 × 2,25 mm</td>
+<td style="text-align:right">po izometrični izmeri</td>
+<td>dobaviteljsko nevtralno</td>
+<td>referenčno Uponor MLC</td>
+<td>določi ponudnik</td>
+<td>Levi zadnji odsek; vertikali V1/V5</td>
+</tr>
+<tr>
+<td>C-SEC-16</td>
+<td>Večslojna cev PEX-AL-PEX 16 × 2 mm</td>
+<td style="text-align:right">po izometrični izmeri</td>
+<td>dobaviteljsko nevtralno</td>
+<td>referenčno Uponor MLC</td>
+<td>določi ponudnik</td>
+<td>Vertikala V6 in vsi terminalni priklopi</td>
+</tr>
+<tr>
+<td>C-SEC-SUM</td>
+<td>Nabavna količina sekundarnih cevi</td>
+<td style="text-align:right">približno 204 m</td>
+<td>—</td>
+<td>vključuje 15 % rezerve</td>
+<td>—</td>
+<td>Razrez po premerih potrditi z izometrično izmero pred naročilom</td>
+</tr>
+<tr>
+<td>FIT-SEC</td>
+<td>Press fitingi, prehodi, razstavljivi spoji in nosilci</td>
+<td style="text-align:right">1 komplet</td>
+<td>isti certificirani sistem kot cevi</td>
+<td>po izometrični izmeri</td>
+<td>določi ponudnik</td>
+<td>Količine potrditi po dejanski trasi; brez zmanjšanja potrjenih svetlih presekov</td>
+</tr>
+<tr>
+<td>INS-SEC-25</td>
+<td>Zaprtocelična parozaporna izolacija 25 mm</td>
+<td style="text-align:right">po izmeri</td>
+<td>dobaviteljsko nevtralno</td>
+<td>referenčno AF/ArmaFlex</td>
+<td>določi ponudnik</td>
+<td>Glavna voda v neogrevanem pritličju; projektno 30 °C/70 % RH</td>
+</tr>
+<tr>
+<td>INS-SEC-19</td>
+<td>Zaprtocelična parozaporna izolacija 19 mm</td>
+<td style="text-align:right">po izmeri</td>
+<td>dobaviteljsko nevtralno</td>
+<td>referenčno AF/ArmaFlex</td>
+<td>določi ponudnik</td>
+<td>Kratki deli vertikal v pritličju</td>
+</tr>
+<tr>
+<td>INS-SEC-13</td>
+<td>Zaprtocelična parozaporna izolacija 13 mm</td>
+<td style="text-align:right">po izmeri</td>
+<td>dobaviteljsko nevtralno</td>
+<td>referenčno AF/ArmaFlex</td>
+<td>določi ponudnik</td>
+<td>Vertikale in priklopi v hlajenih prostorih</td>
+</tr>
+<tr>
+<td>COND-20</td>
+<td>Kondenzni priklop terminala DN20</td>
+<td style="text-align:right">16 kompletov</td>
+<td>po izbiri</td>
+<td>gladka notranjost, servisno dostopen</td>
+<td>določi ponudnik</td>
+<td>Najmanj 3 % do zbirne črpalke; 9 mm izolacije</td>
+</tr>
+<tr>
+<td>COND-25</td>
+<td>Kondenzni zbirnik vej V1–V4 DN25</td>
+<td style="text-align:right">4 trase</td>
+<td>po izbiri</td>
+<td>DN25</td>
+<td>določi ponudnik</td>
+<td>Najmanj 3 % do zbirne črpalke; revizijske točke</td>
+</tr>
+<tr>
+<td>COND-32</td>
+<td>Kondenzni zbirnik veje V5 DN32</td>
+<td style="text-align:right">1 trasa</td>
+<td>po izbiri</td>
+<td>DN32</td>
+<td>določi ponudnik</td>
+<td>Najmanj 3 % do zbirne črpalke</td>
+</tr>
+<tr>
+<td>COND-40</td>
+<td>Skupni kondenzni zbirnik DN40</td>
+<td style="text-align:right">približno 15 m</td>
+<td>po izbiri</td>
+<td>DN40</td>
+<td>določi ponudnik</td>
+<td>Črpalka pred tlačnim odsekom; za črpalko padec proti iztoku</td>
+</tr>
+<tr>
+<td>CP-01</td>
+<td>Zbirna kondenzna črpalka</td>
+<td style="text-align:right">1 komplet</td>
+<td>Siccom</td>
+<td>Mini Flowatch 2</td>
+<td><code>DE05LC4400</code></td>
+<td>230 V, do 15 l/h, rezervoar, nepovratni ventil, alarm NO/NC; alarm v REG-01</td>
+</tr>
+<tr>
+<td>TRAP-C</td>
+<td>Suhi membranski sifon z revizijo</td>
+<td style="text-align:right">1 komplet</td>
+<td>po izbiri</td>
+<td>DN40 oziroma prilagojen priključek</td>
+<td>določi ponudnik</td>
+<td>Dostopen za čiščenje; ne sme zmanjšati prostega odtoka</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Postavke, ki jih ponudnik dopolni</h2>
+<p>Ponudnik mora v ponudbi dopisati manjkajoče naročniške številke, tehnične liste,<br>
+dobavne roke in dokazila za:</p>
+<ol>
+<li>črpalne delovne točke primarnega dela in označeno krivuljo P-L pri<br>
+2,36 m³/h ter najmanj 7,0 m;</li>
+<li>Kvs in varnostne položaje motornih ventilov;</li>
+<li>tlačni izgubi FIL-HP in SEP-AIR pri 2,75 m³/h;</li>
+<li>ustreznost elementov za pitno vodo;</li>
+<li>električne podatke pogonov, tipal, REG-01, oddaljenih I/O, relejnih sklopov,<br>
+UPS-HP in UPS-REG;</li>
+<li>izometrično potrjene količine fitingov, izolacije in nosilcev;</li>
+<li>nastavitveni zapisnik vseh PICV in funkcijski preizkus CP-01;</li>
+<li>zagonski dokaz temperatur 65 °C in 7 °C na vmesniku T-01.</li>
+</ol>
+<p>Kataloški velikosti F-08 in F-09 nista več odprti potrditvi. Ponudnik dopolni<br>
+le sestavo, proizvajalca in naročniške številke garnitur, ki morajo ohraniti<br>
+polni presek DN32 ter omogočiti razstavljanje naprav.</p>
+<h2>8. Dokazila za potrjene priključke</h2>
+<table>
+<thead>
+<tr>
+<th>Postavka</th>
+<th>Dokazilo</th>
+<th>Potrjeni podatek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F-08 / T-02</td>
+<td>Cordivari, <em>BOLLY 2 AP INOX – high performances</em>, 11/2023, model 400, koda <code>3134052010303</code></td>
+<td>F/G spodnjega in I/L zgornjega HX: G 1″ F</td>
+</tr>
+<tr>
+<td>F-09 / T-01</td>
+<td>Cordivari, <em>VOLANO BS HOT/COLD – Mild Steel</em>, model 1000, koda <code>3001162150006</code></td>
+<td>štirje sistemski priključki A: 3″ F</td>
+</tr>
+</tbody>
+</table>
+<p>Kopiji tehničnih listov sta priloženi kot<br>
+<a href="reference/cordivari-volano-bs-hot-cold.pdf"><code>VOLANO BS HOT/COLD</code></a> in<br>
+<a href="reference/cordivari-bolly-2-ap-inox-11-2023.pdf"><code>BOLLY 2 AP INOX</code></a>.</p>
+<p>Za sekundarne terminale so uporabljeni Cordivari,<br>
+<em>Fan Coil Catalogue 2025</em>, ter uradna tehnična lista in navodila za montažo<br>
+Ventana REGULAR/LOW. Dokumentacija potrjuje kataloške številke, mere,<br>
+zmogljivosti po EN 1397, priključke G1/2″ F, območje vode 5–75 °C,<br>
+delovni tlak 1–6 bar ter kondenzno posodo z naravnim odtokom.</p>
+
+</body>
+</html>
