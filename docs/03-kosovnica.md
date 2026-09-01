@@ -248,3 +248,45 @@ Za sekundarne terminale so uporabljeni Cordivari,
 Ventana REGULAR/LOW. Dokumentacija potrjuje kataloške številke, mere,
 zmogljivosti po EN 1397, priključke G1/2″ F, območje vode 5–75 °C,
 delovni tlak 1–6 bar ter kondenzno posodo z naravnim odtokom.
+
+## 9. Izolacijski materiali in zaščita
+
+### 9.1 Režim SAMO OGREVANJE (500L bojler – T-02 BOLLY 2 AP)
+
+| Element | Tip izolacije | Debelina | Material | Proizvod. koda | Naročniška št. |
+|---|---|---|---|---|---|
+| T-01 | Mineralna volna | 50 mm | λ=0,038 W/mK | ISO-MW-50 | naročiti |
+| T-02 | Mineralna volna | 50 mm | λ=0,038 W/mK | ISO-MW-50 | naročiti |
+| Primarni vodi | Mineralna volna | 30 mm | Paroizolacijski omot | ISO-MW-30 | naročiti |
+| Sekundarni vodi | Mineralna volna | 30 mm | Paroizolacijski omot | ISO-MW-30 | naročiti |
+
+**Sklici**: Dodatne specifikacije v TD-01 in P&ID rev24; primerna za sisteme brez hlajenja.
+
+### 9.2 Režim OGREVANJE + HLAJENJE (500L bojler – T-01 VOLANO BS HOT/COLD)
+
+| Element | Tip izolacije | Debelina | Material | Proizvod. koda | Naročniška št. |
+|---|---|---|---|---|---|
+| T-01 | Hierarhična, HR | 80 mm | λ=0,030 W/mK, ločnica | ISO-HR-80 | naročiti |
+| T-02 | Hierarhična, HR | 80 mm | λ=0,030 W/mK, zaščita | ISO-HR-80 | naročiti |
+| Primarni vodi | Hierarhična, HR | 50 mm | λ=0,030 W/mK, zaščita | ISO-HR-50 | naročiti |
+| Sekundarni vodi | Hierarhična, HR | 50 mm | λ=0,030 W/mK, zaščita | ISO-HR-50 | naročiti |
+
+**Sklici**: Dodatne specifikacije v TD-01 in P&ID rev24; obvezna za sisteme s hlajenjem.
+
+### 9.3 Navodila za izvajanje izolacije
+
+Izolacija vseh toplotnih akumulatorjev, primarnih in sekundarnih vodov se izvede v skladu z
+naslednjimi standardi in navodili:
+
+- **SIST EN 12828** – Sistemi za ogrevanje zgradbe – Zasnova in vgradnja toplovodnih sistemov
+- **DIN 4724** – Izolacija toplovoznih cevovodov in naprav – Predpisani minimalni zneski
+
+Podrobne specifikacije za izbiro materialov, debeline in načina montaže so navedene v
+tehnični dokumentaciji TD-01 in na načrtih P&ID rev24. Ponudnik v ponudbi dopolni:
+
+1. Dokazilo za ustreznost izbrane izolacije glede na režim delovanja (samo ogrevanje ali
+   ogrevanje + hlajenje).
+2. Tehnične liste proizvajalca z navedbo toplotne prevodnosti λ in certifikatov o ustreznosti
+   evropskim standardom.
+3. Načrt izvajanja izolacije in termična analiza za verifikacijo izgub toplote oziroma
+   hlajenja.
