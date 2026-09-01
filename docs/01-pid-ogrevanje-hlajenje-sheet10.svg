@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <style>
+      .title { font: 700 34px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 600 22px 'Segoe UI', Arial, sans-serif; fill: #1e293b; }
+      .label { font: 500 18px 'Segoe UI', Arial, sans-serif; fill: #1e293b; }
+      .small { font: 500 16px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .iso-a { stroke: #7dd3fc; fill: none; stroke-width: 8; stroke-dasharray: 20 12; }
+      .iso-b { stroke: #1d4ed8; fill: none; stroke-width: 10; stroke-dasharray: 18 10; }
+      .pipe { stroke: #334155; fill: none; stroke-width: 4; }
+      .vessel { stroke: #0f172a; fill: #f8fafc; stroke-width: 3; }
+      .panel { stroke: #cbd5e1; fill: #ffffff; stroke-width: 2; }
+      .divider { stroke: #94a3b8; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect x="20" y="20" width="1560" height="960" class="panel"/>
+  <text x="800" y="80" text-anchor="middle" class="title">LIST 10 — Specifikacija izolacije</text>
+  <line x1="800" y1="120" x2="800" y2="860" class="divider"/>
+  <text x="400" y="130" text-anchor="middle" class="subtitle">REŽIM A — SAMO OGREVANJE</text>
+  <text x="1200" y="130" text-anchor="middle" class="subtitle">REŽIM B — OGREVANJE + HLAJENJE</text>
+
+  <rect x="120" y="200" width="170" height="240" rx="12" class="vessel"/>
+  <text x="205" y="250" text-anchor="middle" class="label">T-01</text>
+  <text x="205" y="280" text-anchor="middle" class="small">HOT/COLD</text>
+  <line x1="290" y1="280" x2="520" y2="280" class="pipe"/>
+  <line x1="290" y1="340" x2="520" y2="340" class="pipe"/>
+  <line x1="300" y1="280" x2="510" y2="280" class="iso-a"/>
+  <line x1="300" y1="340" x2="510" y2="340" class="iso-a"/>
+
+  <rect x="120" y="500" width="170" height="220" rx="12" class="vessel"/>
+  <text x="205" y="555" text-anchor="middle" class="label">T-02</text>
+  <text x="205" y="585" text-anchor="middle" class="small">Bojler 500L sistem</text>
+  <line x1="290" y1="560" x2="520" y2="560" class="pipe"/>
+  <line x1="290" y1="620" x2="520" y2="620" class="pipe"/>
+  <line x1="300" y1="560" x2="510" y2="560" class="iso-a"/>
+  <line x1="300" y1="620" x2="510" y2="620" class="iso-a"/>
+  <text x="535" y="286" class="small">ISO-50mm-MW</text>
+  <text x="535" y="346" class="small">ISO-50mm-MW</text>
+  <text x="535" y="566" class="small">ISO-50mm-MW</text>
+  <text x="535" y="626" class="small">ISO-50mm-MW</text>
+  <text x="120" y="770" class="label">Sekundarne vode (A): izolacija 50 mm</text>
+
+  <rect x="910" y="200" width="170" height="240" rx="12" class="vessel"/>
+  <text x="995" y="250" text-anchor="middle" class="label">T-01</text>
+  <text x="995" y="280" text-anchor="middle" class="small">HOT/COLD</text>
+  <line x1="1080" y1="280" x2="1310" y2="280" class="pipe"/>
+  <line x1="1080" y1="340" x2="1310" y2="340" class="pipe"/>
+  <line x1="1090" y1="280" x2="1300" y2="280" class="iso-b"/>
+  <line x1="1090" y1="340" x2="1300" y2="340" class="iso-b"/>
+
+  <rect x="910" y="500" width="170" height="220" rx="12" class="vessel"/>
+  <text x="995" y="555" text-anchor="middle" class="label">T-02</text>
+  <text x="995" y="585" text-anchor="middle" class="small">Bojler 500L sistem</text>
+  <line x1="1080" y1="560" x2="1310" y2="560" class="pipe"/>
+  <line x1="1080" y1="620" x2="1310" y2="620" class="pipe"/>
+  <line x1="1090" y1="560" x2="1300" y2="560" class="iso-b"/>
+  <line x1="1090" y1="620" x2="1300" y2="620" class="iso-b"/>
+  <text x="1325" y="286" class="small">ISO-80mm-HB-HR</text>
+  <text x="1325" y="346" class="small">ISO-80mm-HB-HR</text>
+  <text x="1325" y="566" class="small">ISO-80mm-HB-HR</text>
+  <text x="1325" y="626" class="small">ISO-80mm-HB-HR</text>
+  <text x="910" y="770" class="label">Sekundarne vode (B): izolacija 80 mm</text>
+
+  <rect x="120" y="820" width="1360" height="120" rx="10" class="panel"/>
+  <text x="150" y="855" class="subtitle">Legenda in materiali (ISO 14617/10628: črtkane črte na ceveh)</text>
+  <line x1="160" y1="890" x2="260" y2="890" class="iso-a"/>
+  <text x="280" y="896" class="label">A: Mineralna volna, λ=0,038 W/mK</text>
+  <line x1="850" y1="890" x2="950" y2="890" class="iso-b"/>
+  <text x="970" y="896" class="label">B: Hierarhična izolacija s kondenzacijsko ločnico</text>
+</svg>
